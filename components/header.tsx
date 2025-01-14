@@ -27,14 +27,14 @@ export default function Header() {
   return (
     <motion.header
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled
-          ? "bg-background/80 backdrop-blur-md border-b"
-          : "bg-transparent"
+        ? "bg-background/80 backdrop-blur-md border-b"
+        : "bg-transparent"
         }`}
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.3 }}
     >
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 border-b-2">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="text-2xl font-bold text-primary">
             AutoPO
