@@ -2,9 +2,9 @@
 
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { 
-  ClipboardCheck, 
-  Settings, 
+import {
+  ClipboardCheck,
+  Settings,
   Rocket,
   ArrowRight
 } from "lucide-react";
@@ -45,7 +45,7 @@ export default function HowItWorks() {
             initial={{ opacity: 0, y: 20 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5 }}
-            className="text-4xl md:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-violet-500 to-purple-500"
+            className="text-4xl md:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-blue-500"
           >
             How It Works
           </motion.h2>
@@ -80,7 +80,7 @@ export default function HowItWorks() {
               >
                 <div className="absolute inset-0 bg-gradient-radial opacity-10" />
                 <div className={`absolute inset-0 bg-gradient-to-b ${step.color} opacity-10 rounded-2xl`} />
-                
+
                 <div className="relative">
                   <div className="flex items-center gap-4 mb-6">
                     <div className="relative">
@@ -91,9 +91,9 @@ export default function HowItWorks() {
                     </div>
                     <h3 className="text-2xl font-bold">{step.title}</h3>
                   </div>
-                  
+
                   <p className="text-lg text-muted-foreground mb-6">{step.description}</p>
-                  
+
                   <motion.div
                     whileHover={{ x: 5 }}
                     className="flex items-center gap-2 text-primary font-medium cursor-pointer"
@@ -102,7 +102,7 @@ export default function HowItWorks() {
                   </motion.div>
                 </div>
               </motion.div>
-              
+
               {index < steps.length - 1 && (
                 <div className="hidden md:block absolute -right-6 top-1/2 transform -translate-y-1/2 z-20">
                   <motion.div

@@ -34,7 +34,7 @@ export default function Header() {
       animate={{ y: 0 }}
       transition={{ duration: 0.3 }}
     >
-      <div className="container mx-auto px-4 border-b-2">
+      <div className="container mx-auto px-4 border-b border-gray-600">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="text-2xl font-bold text-primary">
             AutoPO
