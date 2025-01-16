@@ -94,7 +94,7 @@ export default function Hero() {
               {!isVideoPlaying && (
                 <>
                   <img
-                    src="/api/placeholder/1280/720"
+                    src="https://www.make.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fun655fb9wln6%2FZv0HaX3hsZPofrSsGPdwD%2Fee6e2fc0fc9234dc81c9d2c2497aef9e%2FrecUronNioSQrRd6v-hero.png&w=3840&q=90"
                     alt="Demo preview"
                     className="w-full h-full object-cover opacity-50"
                   />
